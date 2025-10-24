@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin • Manage Users</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎓</span>
+        <span class="name">Soma Utsinde</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+        <a href="updates.html">Updates</a>
+        <a href="login.html">Login</a>
+        <span id="userName" style="margin-left:8px;opacity:.9"></span>
+        <button id="logoutBtn" type="button" class="btn" style="display:none;margin-left:6px;padding:6px 10px">Logout</button>
+        <a id="logoutLink" class="logout-link" href="#" style="display:none">Logout</a>
+        <div id="account" class="account" style="display:none">
+          <button id="accountBtn" type="button" class="account-btn">Account ▾</button>
+          <div id="accountMenu" class="account-menu">
+            <a href="login.html">Change Password</a>
+            <button id="accountLogoutBtn" type="button">Logout</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app">
+    <h1 class="title">Admin • Users</h1>
+    <section class="report" id="adminSection" aria-live="polite">
+      <div class="report-card">
+        <div class="options" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <button id="reloadBtn" class="btn">Reload</button>
+          <span id="adminMsg" class="lead"></span>
+        </div>
+        <div style="overflow:auto;margin-top:12px">
+          <table id="usersTable" style="width:100%;border-collapse:collapse">
+            <thead>
+              <tr style="text-align:left">
+                <th style="padding:8px;border-bottom:1px solid #1f2a44">ID</th>
+                <th style="padding:8px;border-bottom:1px solid #1f2a44">Name</th>
+                <th style="padding:8px;border-bottom:1px solid #1f2a44">Email</th>
+                <th style="padding:8px;border-bottom:1px solid #1f2a44">Verified</th>
+                <th style="padding:8px;border-bottom:1px solid #1f2a44">Admin</th>
+                <th style="padding:8px;border-bottom:1px solid #1f2a44">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="usersBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Soma Utsinde • Driving License Practice</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
