@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driving License Practice • Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎓</span>
+        <span class="name">Soma Utsinde</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+        <a href="updates.html">Updates</a>
+        <a href="login.html">Login</a>
+        <span id="userName" style="margin-left:8px;opacity:.9"></span>
+        <button id="logoutBtn" type="button" class="btn" style="display:none;margin-left:6px;padding:6px 10px">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app">
+    <h1 class="title">Your Report</h1>
+    <section id="report" class="report" aria-live="polite">
+      <div class="report-grid">
+        <div class="report-card">
+          <h2 class="report-title">Overall Score</h2>
+          <div id="overallGauge" class="gauge"></div>
+        </div>
+        <div class="report-card">
+          <h2 class="report-title">Summary</h2>
+          <canvas id="summaryChart" width="300" height="300"></canvas>
+        </div>
+        <div class="report-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+            <h2 class="report-title" style="margin:0">History</h2>
+            <div class="actions" style="margin:0">
+              <button id="histWeekly" class="btn primary" type="button">Weekly</button>
+              <button id="histAll" class="btn" type="button">All-time</button>
+            </div>
+          </div>
+          <canvas id="historyChart" width="400" height="240" style="margin-top:8px"></canvas>
+        </div>
+        <div class="report-card eligibility">
+          <h2 class="report-title">Provisional Exam Eligibility</h2>
+          <div id="eligibilityBadge" class="eligibility-badge" role="status" aria-live="polite"></div>
+          <p id="eligibilityText" class="eligibility-text"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Soma Utsinde • Driving License Practice</span>
+     
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

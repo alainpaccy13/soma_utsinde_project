@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driving License Practice • Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎓</span>
+        <span class="name">Soma Utsinde</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+        <a href="updates.html">Updates</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app">
+    <h1 class="title">Login</h1>
+    <section class="report">
+      <div class="report-grid">
+        <div class="report-card">
+          <h2 class="report-title">Login</h2>
+          <div class="options" style="gap:10px">
+            <input id="loginEmail" type="email" placeholder="Email" class="btn" style="padding:10px"/>
+            <input id="loginPassword" type="password" placeholder="Password" class="btn" style="padding:10px"/>
+            <button id="loginBtn" class="btn primary">Login</button>
+            <div id="loginMsg" class="lead"></div>
+            <div class="muted">No account? <a href="register.html">Create one</a></div>
+          </div>
+        </div>
+        <div class="report-card" id="changePwdCard" style="display:none">
+          <h2 class="report-title">Change Password</h2>
+          <div class="options" style="gap:10px">
+            <input id="oldPassword" type="password" placeholder="Current password" class="btn" style="padding:10px"/>
+            <input id="newPassword" type="password" placeholder="New password" class="btn" style="padding:10px"/>
+            <button id="changePwdBtn" class="btn">Update Password</button>
+            <div id="changePwdMsg" class="lead"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Soma Utsinde • Driving License Practice</span>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>

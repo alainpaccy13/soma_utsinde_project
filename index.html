@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driving License Practice • Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎓</span>
+        <span class="name">Soma Utsinde</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+        <a href="updates.html">Updates</a>
+        <a href="login.html">Login</a>
+        <span id="userName" style="margin-left:8px;opacity:.9"></span>
+        <button id="logoutBtn" type="button" class="btn" style="display:none;margin-left:6px;padding:6px 10px">Logout</button>
+        <a id="logoutLink" class="logout-link" href="#" style="display:none">Logout</a>
+        <div id="account" class="account" style="display:none">
+          <button id="accountBtn" type="button" class="account-btn">Account ▾</button>
+          <div id="accountMenu" class="account-menu">
+            <a href="login.html">Change Password</a>
+            <button id="accountLogoutBtn" type="button">Logout</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="slideshow" id="slideshow" aria-label="Promotional images">
+        <button class="slide-btn prev" id="prevSlide" aria-label="Previous slide">‹</button>
+        <div class="slides" id="slides"></div>
+        <button class="slide-btn next" id="nextSlide" aria-label="Next slide">›</button>
+        <div class="dots" id="dots" role="tablist" aria-label="Slideshow dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="app">
+    <h1 class="title">Driving License Practice</h1>
+    <section class="intro">
+      <p class="lead">Practice randomized exam questions for your driving license. See instant results and detailed reports.</p>
+      <a class="btn primary" href="quiz.html">Start Quiz</a>
+    </section>
+    <section class="section">
+      <h2 class="report-title">Driving License Categories (Rwanda)</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <div class="media" style="background-image:url('https://unsplash.com/photos/man-in-black-motorcycle-helmet-riding-motorcycle-during-daytime-QpteWNCggA0')"></div>
+          <div class="body">
+            <div class="title">Category A / A2</div>
+            <div class="muted">Motorcycles and two-wheelers.</div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">Category B</div>
+            <div class="muted">Light motor vehicles (cars).</div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media" style="background-image:url('https://unsplash.com/photos/truck-on-highway-during-daytime-7eaFIKeo1MQ')"></div>
+          <div class="body">
+            <div class="title">Category C</div>
+            <div class="muted">Heavy goods vehicles (trucks).</div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1563720223185-11003d5162a4?q=80&w=800&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">Category D</div>
+            <div class="muted">Passenger vehicles (buses).</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="report-title">Car News and Updates</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=800&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">Volkswagen Rwanda</div>
+            <div class="muted">Local assembly and mobility updates.</div>
+            <p><a class="btn" href="https://www.vw.com/rwanda/" target="_blank" rel="noopener">Visit</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1549921296-3c675ce7731c?q=80&w=800&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">CFAO Motors Rwanda</div>
+            <div class="muted">Toyota and more – dealer news.</div>
+            <p><a class="btn" href="https://www.cfaomotors-rwanda.com/" target="_blank" rel="noopener">Visit</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1511396274084-9a2b0e9b7d0e?q=80&w=800&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">Irembo Driving Services</div>
+            <div class="muted">Bookings for tests and license services.</div>
+            <p><a class="btn" href="https://irembo.gov.rw/rolservices" target="_blank" rel="noopener">Visit</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="title">Global Car News</div>
+            <div class="muted">Latest models and technology trends.</div>
+            <p><a class="btn" href="https://www.caranddriver.com/news/" target="_blank" rel="noopener">Visit</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Soma Utsinde • Driving License Practice</span>
+     
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

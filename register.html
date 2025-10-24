@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driving License Practice • Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎓</span>
+        <span class="name">Soma Utsinde</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+        <a href="updates.html">Updates</a>
+        <a href="login.html">Login</a>
+        <span id="userName" style="margin-left:8px;opacity:.9"></span>
+        <button id="logoutBtn" type="button" class="btn" style="display:none;margin-left:6px;padding:6px 10px">Logout</button>
+        <a id="logoutLink" class="logout-link" href="#" style="display:none">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app">
+    <h1 class="title">Create Account</h1>
+    <section class="report">
+      <div class="report-grid">
+        <div class="report-card">
+          <h2 class="report-title">Register</h2>
+          <div class="options" style="gap:10px">
+            <input id="regName" type="text" placeholder="Full name" class="btn" style="padding:10px"/>
+            <input id="regEmail" type="email" placeholder="Email" class="btn" style="padding:10px"/>
+            <input id="regPassword" type="password" placeholder="Password" class="btn" style="padding:10px"/>
+            <button id="registerBtn" class="btn primary">Register</button>
+            <div id="regMsg" class="lead"></div>
+            <div class="muted">Already have an account? <a href="login.html">Login</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Soma Utsinde • Driving License Practice</span>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>

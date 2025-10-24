@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driving License Practice • Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🎓</span>
+        <span class="name">Soma Utsinde</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html">Report</a>
+        <a href="updates.html">Updates</a>
+        <a href="login.html">Login</a>
+        <span id="userName" style="margin-left:8px;opacity:.9"></span>
+        <button id="logoutBtn" type="button" class="btn" style="display:none;margin-left:6px;padding:6px 10px">Logout</button>
+        <a id="logoutLink" class="logout-link" href="#" style="display:none">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app">
+    <h1 class="title">Randomized Practice Exam</h1>
+    <section id="intro" class="intro">
+      <p class="lead">Click start to generate 20 random questions. Submit to see your score instantly.</p>
+      <button id="startBtn" class="btn primary">Start</button>
+    </section>
+
+    <form id="quiz" class="quiz hidden"></form>
+
+    <section id="actions" class="actions hidden">
+      <button id="submitBtn" type="button" class="btn primary">Submit</button>
+      <button id="retryBtn" type="button" class="btn">Try Again</button>
+    </section>
+
+    <section id="result" class="result hidden" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Soma Utsinde • Driving License Practice</span>
+      
+    </div>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
